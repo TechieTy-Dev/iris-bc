@@ -35,8 +35,6 @@ export const TwitterProvider = ({ children }) => {
         setCurrentAccount(addressArray[0]);
 
         createUserAccount(addressArray[0]);
-
-        console.log(createUserAccount);
       } else {
         router.push("/");
         setAppStatus("notConnected");
