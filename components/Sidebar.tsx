@@ -45,6 +45,7 @@ function Sidebar({ initalSelectedIcon }: SidebrProps) {
   const [selected, setSelected] = useState < String > (initalSelectedIcon);
   const { currentAccount, currentUser } = useContext(TwitterContext);
   const router = useRouter();
+  const profileImage = "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61";
 
   return (
     <div className={style.wrapper}>
@@ -126,7 +127,7 @@ function Sidebar({ initalSelectedIcon }: SidebrProps) {
       <div className={style.profileButton}>
         <div className={style.profileLeft}>
           <Image
-            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61"
+            src={profileImage}
             alt="profile"
             height={40}
             width={40}
