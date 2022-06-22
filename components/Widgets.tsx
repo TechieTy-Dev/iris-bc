@@ -3,25 +3,25 @@ import { BiSearch } from "react-icons/bi";
 import Image from "next/image";
 
 const style = {
-  wrapper: "flex-[1] p-2",
+  wrapper: "flex-[1] p-2 ml-2",
   searchBar: "flex items-center bg-[#243340] p-2 rounded-3xl",
   searchIcon: "text-[#8899a6] mr-2",
   inputBox: "bg-transparent outline-none",
   section: "bg-[#192734] my-6 rounded-xl overflow-hidden",
   title: "p-2 font-bold text-lg",
-  showMore: "p-2 text-[#1d9bf0] text-sm cursor-pointer hover:bg-[#22303c] ml-2",
+  showMore: "p-2 text-[#1d9bf0] text-sm cursor-pointer hover:bg-[#22303c]",
   item: "flex items-center p-1 my-2 hover:bg-[#22303c] cursor-pointer",
   newsItemLeft: "flex-1",
   newsItemCategory: "ml-1 text-[#8899a6] text-xs font-semibold",
   newsItemTitle: "ml-1 text-sm font-bold",
   newsItemRight: "w-1/4 ml-3",
   newsItemImage: "rounded-xl h-14 w-14 object-cover",
-  followAvatarContainer: "w-1/4 ml-3",
-  followAvatar: "rounded-full h-[40px] w-[40px]",
+  followAvatarContainer: "w-12 h-12 ml-3",
+  followAvatar: "rounded-full h-12 w-12",
   profileDetails: "flex-1",
   name: "font-bold",
   handle: "text-[#8899a6]",
-  followButton: "bg-white text-black px-2 py-1 rounded-full text-xs font-bold m-3",
+  followButton: "bg-[#047c84] text-white hover:bg-[#449e95] px-2 py-1 rounded-full text-xs font-bold m-3",
 };
 
 function Widgets() {

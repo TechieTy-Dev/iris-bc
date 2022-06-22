@@ -5,7 +5,7 @@ import { IoMdCalendar } from "react-icons/io";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { TwitterContext } from "../../context/TwitterContext";
 import { client } from "../../lib/client";
-
+import Image from "next/image";
 const style = {
   wrapper: "px-4 flex flex-row border-b border-[#38444d] pb-4",
   tweetBoxLeft: "mr-4",
@@ -66,9 +66,10 @@ const TweetBox = () => {
       {/* Profile Image in TweetBox */}
 
       <div className={style.tweetBoxLeft}>
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61"
           height={40}
+          width={40}
           alt="profile image"
           className={
             currentUser.isProfileNft

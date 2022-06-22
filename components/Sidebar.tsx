@@ -18,12 +18,13 @@ import Modal from "react-modal";
 import { useRouter } from "next/router";
 import ProfileImageMinter from "./profile/mintingModal/ProfileImageMinter";
 import { customStyles } from "../lib/constants";
+import Image from "next/image";
 
 const style = {
   wrapper: "flex-[1] px-.5 flex flex-col",
   iconContainer: "text-3xl m-3",
   tweetButton:
-    "bg-[#047c84] text-white hover:bg-[#449e95] flex items-center justify-center font-bold rounded-3xl h-[50px] w-[300px] mt-[15px] cursor-pointer",
+    "bg-[#047c84] text-white hover:bg-[#449e95] flex items-center justify-center font-bold rounded-3xl h-[50px] w-[250px] mr-2 mt-[15px] cursor-pointer",
   navContainer: "flex-1",
   profileButton:
     "flex items-center mb-8 cursor-pointer hover:bg-[#333c45] rounded-[100px] p-1",
@@ -124,9 +125,11 @@ function Sidebar({ initalSelectedIcon }: SidebrProps) {
  {/* Profile Image/Address at the bottom */}
       <div className={style.profileButton}>
         <div className={style.profileLeft}>
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61"
             alt="profile"
+            height={40}
+            width={40}
             className={
               currentUser.isProfileNft
                 ? `${style.profileImage} smallHex`
